@@ -62,3 +62,16 @@ if (lightbox) {
     });
 
 }
+
+const menuButton = document.querySelector(".menu-button");
+const mainNav = document.querySelector(".main-nav");
+
+if (menuButton && mainNav) {
+
+    menuButton.addEventListener("click", function() {
+
+        mainNav.classList.toggle("open");
+
+    });
+
+}
