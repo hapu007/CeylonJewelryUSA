@@ -343,3 +343,55 @@ footer {
     font-size: 42px;
     cursor: pointer;
 }
+
+.logo {
+    color: #222222;
+    text-decoration: none;
+}
+
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+
+    header {
+        position: relative;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header h1 {
+        font-size: 21px;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .main-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        border-bottom: 1px solid #eeeeee;
+        z-index: 100;
+    }
+
+    .main-nav.open {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-nav a {
+        margin: 0;
+        padding: 16px 8%;
+        border-top: 1px solid #eeeeee;
+    }
+}
